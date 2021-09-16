@@ -1,5 +1,2 @@
-- contact us section
-- graphic touches
-- media queries
-- all products
-
+-logo ico
+-logo site
