@@ -165,14 +165,38 @@
   cursor: pointer;
 }
 
+
+@media screen and (max-width: 1140px) {
+  .navbar-items {
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+  }
+  #hamburger {
+    width: auto;
+    display: block;
+    padding-left: 72px;
+  }
+  .navbar-items > div:first-child::after {
+    display: none;
+  }
+  .navbar-background-content {
+    top: 20%;
+  }
+  .navbar-background-with-text {
+    height: 550px;
+    min-height: 550px;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .navbar-background-content-main {
     font-size: 80px;
     line-height: 90px;
   }
   .navbar-background-with-text {
-    height: 400px;
-    min-height: 400px;
+    height: 450px;
+    min-height: 450px;
   }
   .navbar-wrapper {
     height: 70px !important;
@@ -197,38 +221,11 @@
   .navbar-background-content-title {
     font-size: 40px;
   }
-  .navbar-background-with-text {
-    height: 380px;
-    min-height: 380px;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .navbar-background-content-main {
     font-size: 54px;
     line-height: 60px;
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .navbar-items {
-    opacity: 0;
-    pointer-events: none;
-    width: 0;
-  }
-  #hamburger {
-    width: auto;
-    display: block;
-    padding-left: 72px;
-  }
-  .navbar-items > div:first-child::after {
-    display: none;
-  }
-  .navbar-background-content {
-    top: 20%;
-  }
-  .navbar-background-with-text {
-    height: 550px;
-    min-height: 550px;
   }
 }
