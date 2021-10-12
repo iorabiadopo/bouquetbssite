@@ -6,7 +6,7 @@
 
     <title>Лютики&Цветочки</title>
     <meta name="author" content="Daniyil Krasnov" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--ICONS TAKEN FROM FLATICON-->
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/global.css" />
@@ -112,9 +112,7 @@
               всегда радуем вас небольшими бонусами и подарочками.
               <h2>Желаем вам приятного выбора!</h2>
             </span>
-            <div
-              id="pres-sec-img"
-            ></div>
+            <div id="pres-sec-img"></div>
           </div>
           <div class="slide-menu">
             <div class="slide-menu--wrapper">
@@ -163,7 +161,7 @@
       <div class="presentation-container">
         <div class="presenation-explanation-box">
           <span class="presentation-pretitle">Продукты</span>
-          <span class="presentation-title">Букеты, цветы и игрушки</span>
+          <span class="presentation-title">Букеты и цветы</span>
         </div>
       </div>
     </div>
@@ -178,7 +176,6 @@
               placeholder="Поиск..."
               class="input-primary"
             />
-            <select id="filter-select" class="select-primary"></select>
           </div>
           <div id="color-filters" class="filter-colors"></div>
         </div>
@@ -188,6 +185,34 @@
         <span>Товаров не найдено</span>
       </div>
       <div id="products-grid" class="products-grid"></div>
+    </div>
+    <div class="presentation-wrapper" style="padding: 50px 0px">
+      <div class="presentation-container">
+        <div class="presenation-explanation-box">
+          <span class="presentation-title">Игрушки</span>
+        </div>
+      </div>
+    </div>
+    <div class="products-and-filters-container">
+      <div class="filter-container">
+        <div class="filters-title">Фильтры</div>
+        <div class="filters">
+          <div class="filter-search-and-category">
+            <input
+              id="input-search-2"
+              style="margin-right: 10px"
+              placeholder="Поиск..."
+              class="input-primary"
+            />
+          </div>
+          <div id="color-filters-2" class="filter-colors"></div>
+        </div>
+      </div>
+      <div id="no-products-found-2">
+        <img src="./assets/images/no-products.png" alt="noprods" />
+        <span>Товаров не найдено</span>
+      </div>
+      <div id="products-grid-2" class="products-grid"></div>
     </div>
     <div id="contacts" class="presentation-wrapper" style="padding: 50px 0px">
       <div class="presentation-container">
@@ -286,8 +311,9 @@
         });
       });
       buildColors();
-      buildOptions();
       buildProducts();
+      buildColors2();
+      buildProducts2();
     </script>
   </body>
 </html>
