@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/slide.css" />
     <link rel="stylesheet" href="styles/products.css" />
     <link rel="stylesheet" href="styles/contacts.css" />
+    <link rel="icon" type="image/png" href="./assets/images/icon.png" />
     <script src="javascript/data.js"></script>
     <script
       src="https://kit.fontawesome.com/65a1d3d25a.js"
@@ -27,7 +28,7 @@
     <div id="navbar-hamburger-menu">
       <div class="navbar-items-hamb">
         <div>
-          <img id="hamb-logo" src="./assets/images/bouquet.png" />
+          <img id="hamb-logo" src="./assets/images/icon.png" />
           <div id="hamb-title">Лютики&Цветочки</div>
         </div>
         <div class="lmao-lazy"><a href="#start-page">Главная</a></div>
@@ -160,11 +161,14 @@
     <div id="prods" class="presentation-wrapper" style="padding: 50px 0px">
       <div class="presentation-container">
         <div class="presenation-explanation-box">
-          <span class="presentation-pretitle">Продукты</span>
-          <span class="presentation-title">Букеты и цветы</span>
+          <span class="presentation-pretitle"
+            >БУКЕТЫ • КОМПОЗИЦИИ • РАСТЕНИЯ В ГОРШКАХ • ИГРУШКИ</span
+          >
+          <span class="presentation-title">БУКЕТЫ</span>
         </div>
       </div>
     </div>
+
     <div class="products-and-filters-container">
       <div class="filter-container">
         <div class="filters-title">Фильтры</div>
@@ -186,14 +190,88 @@
       </div>
       <div id="products-grid" class="products-grid"></div>
     </div>
-    <div class="presentation-wrapper" style="padding: 50px 0px">
+
+    <div
+      id="section-prod-4-pt1"
+      class="presentation-wrapper"
+      style="padding: 50px 0px"
+    >
       <div class="presentation-container">
         <div class="presenation-explanation-box">
-          <span class="presentation-title">Игрушки</span>
+          <span class="presentation-title">КОМПОЗИЦИИ</span>
         </div>
       </div>
     </div>
-    <div class="products-and-filters-container">
+
+    <div id="section-prod-4-pt2" class="products-and-filters-container">
+      <div class="filter-container">
+        <div class="filters-title">Фильтры</div>
+        <div class="filters">
+          <div class="filter-search-and-category">
+            <input
+              id="input-search-4"
+              style="margin-right: 10px"
+              placeholder="Поиск..."
+              class="input-primary"
+            />
+          </div>
+          <div id="color-filters-4" class="filter-colors"></div>
+        </div>
+      </div>
+      <div id="no-products-found-4">
+        <img src="./assets/images/no-products.png" alt="noprods" />
+        <span>Товаров не найдено</span>
+      </div>
+      <div id="products-grid-4" class="products-grid"></div>
+    </div>
+
+    <div
+      id="section-prod-3-pt1"
+      class="presentation-wrapper"
+      style="padding: 50px 0px"
+    >
+      <div class="presentation-container">
+        <div class="presenation-explanation-box">
+          <span class="presentation-title">РАСТЕНИЯ В ГОРШКАХ</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-prod-3-pt2" class="products-and-filters-container">
+      <div class="filter-container">
+        <div class="filters-title">Фильтры</div>
+        <div class="filters">
+          <div class="filter-search-and-category">
+            <input
+              id="input-search-3"
+              style="margin-right: 10px"
+              placeholder="Поиск..."
+              class="input-primary"
+            />
+          </div>
+          <div id="color-filters-3" class="filter-colors"></div>
+        </div>
+      </div>
+      <div id="no-products-found-3">
+        <img src="./assets/images/no-products.png" alt="noprods" />
+        <span>Товаров не найдено</span>
+      </div>
+      <div id="products-grid-3" class="products-grid"></div>
+    </div>
+
+    <div
+      id="section-prod-2-pt1"
+      class="presentation-wrapper"
+      style="padding: 50px 0px"
+    >
+      <div class="presentation-container">
+        <div class="presenation-explanation-box">
+          <span class="presentation-title">ИГРУШКИ</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-prod-2-pt2" class="products-and-filters-container">
       <div class="filter-container">
         <div class="filters-title">Фильтры</div>
         <div class="filters">
@@ -214,6 +292,7 @@
       </div>
       <div id="products-grid-2" class="products-grid"></div>
     </div>
+
     <div id="contacts" class="presentation-wrapper" style="padding: 50px 0px">
       <div class="presentation-container">
         <div class="presenation-explanation-box">
@@ -310,10 +389,15 @@
           });
         });
       });
+      checkWhichProductArraysAreEmptyAndClean();
       buildColors();
       buildProducts();
       buildColors2();
       buildProducts2();
+      buildColors3();
+      buildProducts3();
+      buildColors4();
+      buildProducts4();
     </script>
   </body>
 </html>

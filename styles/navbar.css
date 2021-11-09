@@ -34,10 +34,10 @@
 }
 
 .navbar-items > div:first-child {
-  background: url("../assets/images/bouquet.png");
+  background: url("../assets/images/icon.png");
   background-size: cover;
-  height: 32px;
-  width: 32px;
+  height: 64px;
+  width: 64px;
   opacity: 0.8;
   margin: 0 40px 0 72px;
 }

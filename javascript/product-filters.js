@@ -7,6 +7,10 @@ $(function () {
     $("#input-search").on("input", ({ target: { value } }) => handleInputFilter(value))
     $(".product-color-large-2").on("click", ({ target: { id } }) => handleColorSelect2(id))
     $("#input-search-2").on("input", ({ target: { value } }) => handleInputFilter2(value))
+    $(".product-color-large-3").on("click", ({ target: { id } }) => handleColorSelect3(id))
+    $("#input-search-3").on("input", ({ target: { value } }) => handleInputFilter3(value))
+    $(".product-color-large-4").on("click", ({ target: { id } }) => handleColorSelect4(id))
+    $("#input-search-4").on("input", ({ target: { value } }) => handleInputFilter4(value))
 });
 
 function handleColorSelect(val) {
@@ -75,4 +79,70 @@ function printColors2() {
 
 function areFiltersClean2() {
     return !ACTIVE_COLORS_FILTER_2.length && !TEXT_FILTER_2
+}
+
+let ACTIVE_COLORS_FILTER_3 = []
+let TEXT_FILTER_3 = ""
+
+function handleColorSelect3(val) {
+    if (ACTIVE_COLORS_FILTER_3.includes(val)) {
+        ACTIVE_COLORS_FILTER_3 = ACTIVE_COLORS_FILTER_3.filter((col) => val !== col)
+    } else {
+        ACTIVE_COLORS_FILTER_3.push(val)
+    }
+    printColors3()
+}
+
+function handleInputFilter3(value) {
+    TEXT_FILTER_3 = value
+    buildProducts3()
+}
+
+function printColors3() {
+    COLORS_ACTIVE_ARRAY.forEach(({ value }) => {
+        const selItem = document.getElementById(value + "-3")
+        if (ACTIVE_COLORS_FILTER_3.includes(value + "-3")) {
+            selItem.classList.add("active-color")
+        } else {
+            selItem.classList.remove("active-color")
+        }
+    })
+    buildProducts3()
+}
+
+function areFiltersClean3() {
+    return !ACTIVE_COLORS_FILTER_3.length && !TEXT_FILTER_3
+}
+
+let ACTIVE_COLORS_FILTER_4 = []
+let TEXT_FILTER_4 = ""
+
+function handleColorSelect4(val) {
+    if (ACTIVE_COLORS_FILTER_4.includes(val)) {
+        ACTIVE_COLORS_FILTER_4 = ACTIVE_COLORS_FILTER_4.filter((col) => val !== col)
+    } else {
+        ACTIVE_COLORS_FILTER_4.push(val)
+    }
+    printColors4()
+}
+
+function handleInputFilter4(value) {
+    TEXT_FILTER_4 = value
+    buildProducts4()
+}
+
+function printColors4() {
+    COLORS_ACTIVE_ARRAY.forEach(({ value }) => {
+        const selItem = document.getElementById(value + "-4")
+        if (ACTIVE_COLORS_FILTER_3.includes(value + "-4")) {
+            selItem.classList.add("active-color")
+        } else {
+            selItem.classList.remove("active-color")
+        }
+    })
+    buildProducts4()
+}
+
+function areFiltersClean4() {
+    return !ACTIVE_COLORS_FILTER_4.length && !TEXT_FILTER_4
 }

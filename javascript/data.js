@@ -70,19 +70,11 @@ const ITEM_FLOWER_8 = new Item("Букет 7", "", ["flower8.jpeg"], CATEGORY_BO
 const ITEM_FLOWER_9 = new Item("Букет 8", "", ["flower9.jpeg"], CATEGORY_BOUQUET, [COLOR_ROSE], 85)
 const ITEM_FLOWER_10 = new Item("Букет 9", "", ["flower10.jpeg"], CATEGORY_BOUQUET, [COLOR_ROSE, COLOR_GREEN], 85)
 const ITEM_FLOWER_11 = new Item("Букет 10", "", ["flower11.jpeg"], CATEGORY_BOUQUET, [COLOR_YELLOW], 85)
-const ITEM_FLOWER_12 = new Item("Букет 11", "", ["flower12.jpeg"], CATEGORY_BOUQUET, [COLOR_YELLOW, COLOR_LAVANDER, COLOR_GREEN], 35)
-const ITEM_FLOWER_13 = new Item("Букет 12", "", ["flower13.jpeg"], CATEGORY_BOUQUET, [COLOR_ROSE, COLOR_WHITE, COLOR_YELLOW], 35)
-const ITEM_FLOWER_14 = new Item("Букет 13", "", ["flower14.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_ORANGE, COLOR_YELLOW], 35)
-const ITEM_FLOWER_15 = new Item("Букет 14", "", ["flower15.jpeg"], CATEGORY_BOUQUET, [COLOR_ROSE, COLOR_LAVANDER, COLOR_WHITE, COLOR_GREEN], 300)
-const ITEM_FLOWER_16 = new Item("Букет 15", "", ["flower16.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_ORANGE, COLOR_YELLOW], 45)
 const ITEM_FLOWER_17 = new Item("Букет 16", "", ["flower17.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_ORANGE, COLOR_ROSE, COLOR_RED], 45)
 const ITEM_FLOWER_18 = new Item("Букет 17", "", ["flower18.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_GREEN], 210)
 const ITEM_FLOWER_19 = new Item("Букет 18", "", ["flower19.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_YELLOW, COLOR_GREEN], 160)
-const ITEM_TOY_1 = new Item("Игрушка 1", "", ["toy1.jpeg"], CATEGORY_STUFFED, [COLOR_LAVANDER], 20)
-const ITEM_TOY_2 = new Item("Игрушка 2", "", ["toy2.jpeg"], CATEGORY_STUFFED, [COLOR_WHITE, COLOR_YELLOW], 20)
-const ITEM_TOY_3 = new Item("Игрушка 3", "", ["toy3.jpeg"], CATEGORY_STUFFED, [COLOR_GREEN], 20)
-const ITEM_TOY_4 = new Item("Игрушка 4", "", ["toy4.jpeg"], CATEGORY_STUFFED, [COLOR_LAVANDER, COLOR_YELLOW], 20)
 
+//bouquettes
 const ITEMS_ACTIVE_ARRAY = [
     ITEM_FLOWER_1,
     ITEM_FLOWER_2,
@@ -95,19 +87,40 @@ const ITEMS_ACTIVE_ARRAY = [
     ITEM_FLOWER_9,
     ITEM_FLOWER_10,
     ITEM_FLOWER_11,
-    ITEM_FLOWER_12,
-    ITEM_FLOWER_13,
-    ITEM_FLOWER_14,
-    ITEM_FLOWER_15,
-    ITEM_FLOWER_16,
     ITEM_FLOWER_17,
     ITEM_FLOWER_18,
     ITEM_FLOWER_19,
 ]
 
+const ITEM_TOY_1 = new Item("Игрушка 1", "", ["toy1.jpeg"], CATEGORY_STUFFED, [COLOR_LAVANDER], 20)
+const ITEM_TOY_2 = new Item("Игрушка 2", "", ["toy2.jpeg"], CATEGORY_STUFFED, [COLOR_WHITE, COLOR_YELLOW], 20)
+const ITEM_TOY_3 = new Item("Игрушка 3", "", ["toy3.jpeg"], CATEGORY_STUFFED, [COLOR_GREEN], 20)
+const ITEM_TOY_4 = new Item("Игрушка 4", "", ["toy4.jpeg"], CATEGORY_STUFFED, [COLOR_LAVANDER, COLOR_YELLOW], 20)
+
+//toys
 const ITEMS_ACTIVE_ARRAY_2 = [
     ITEM_TOY_1,
     ITEM_TOY_2,
     ITEM_TOY_3,
     ITEM_TOY_4
+]
+
+//plants in vase
+const ITEMS_ACTIVE_ARRAY_3 = [
+
+]
+
+const ITEM_FLOWER_12 = new Item("Композиция 1", "", ["flower12.jpeg"], CATEGORY_BOUQUET, [COLOR_YELLOW, COLOR_LAVANDER, COLOR_GREEN], 35)
+const ITEM_FLOWER_13 = new Item("Композиция 2", "", ["flower13.jpeg"], CATEGORY_BOUQUET, [COLOR_ROSE, COLOR_WHITE, COLOR_YELLOW], 35)
+const ITEM_FLOWER_14 = new Item("Композиция 3", "", ["flower14.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_ORANGE, COLOR_YELLOW], 35)
+const ITEM_FLOWER_15 = new Item("Композиция 4", "", ["flower15.jpeg"], CATEGORY_BOUQUET, [COLOR_ROSE, COLOR_LAVANDER, COLOR_WHITE, COLOR_GREEN], 300)
+const ITEM_FLOWER_16 = new Item("Композиция 5", "", ["flower16.jpeg"], CATEGORY_BOUQUET, [COLOR_WHITE, COLOR_ORANGE, COLOR_YELLOW], 45)
+
+//plants in other vases
+const ITEMS_ACTIVE_ARRAY_4 = [
+    ITEM_FLOWER_12,
+    ITEM_FLOWER_13,
+    ITEM_FLOWER_14,
+    ITEM_FLOWER_15,
+    ITEM_FLOWER_16,
 ]
